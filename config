@@ -265,6 +265,7 @@ exec_always --no-startup-id xrandr -s 1920x1080
 # Set autorepeat threshold to 250ms and speed to 50 repeats per seconds
 exec_always --no-startup-id xset r rate 250 50
 
+exec --no-startup-id "setxkbmap -model pc104 -layout us, -variant intl, option grp:ctrl_alt_toggle"
 # Set wallpaper
 # exec_always --no-startup-id feh --bg-fill $HOME/Images/anatomy.jpg
 # exec_always --no-startup-id feh --bg-fill $HOME/Images/lego.jpg
@@ -295,4 +296,3 @@ client.placeholder      $bg_in    $bg_in    $bg_in    $bg_in      $bg_in
 client.background       #ffffff
 
 # Remap CapsLock
-exec --no-startup-id  $HOME/.config/scripts/xmodmap.sh
